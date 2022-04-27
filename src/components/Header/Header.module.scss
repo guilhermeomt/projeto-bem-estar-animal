@@ -1,5 +1,5 @@
 .navbar {
-  background: #F1F5FB !important;
+  background: #f1f5fb !important;
 }
 
 .navbar_end {
@@ -9,4 +9,9 @@
 .navbar_item {
   height: fit-content;
   font-size: 1.2rem;
+}
+
+.navbar_item:last-child {
+  pointer-events: none;
+  opacity: 0.65;
 }

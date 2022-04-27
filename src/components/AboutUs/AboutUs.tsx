@@ -19,7 +19,7 @@ export const AboutUs = () => {
         >
           Sobre Nós
         </Heading>
-        <Columns mt={4}>
+        <Columns mt={4} centered>
           <Columns.Column size={7}>
             <p
               className="paragraph"

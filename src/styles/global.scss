@@ -23,7 +23,49 @@ body {
   margin-bottom: 2rem;
 }
 
+.image {
+  min-width: 75px;
+}
+
+.section {
+  padding-bottom: 0 !important;
+}
 
 @import "../node_modules/bulma/bulma.sass";
 
-@import "../node_modules/bulma-carousel/src/sass/index.sass"
+@import "../node_modules/bulma-carousel/src/sass/index.sass";
+
+@media (max-width: 768px) {
+  .column.is-5 {
+    display: none !important;
+  }
+
+  .image.is-1by1 {
+    padding: 7rem 0;
+  }
+
+  .image.is-1by1 > img {
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto;
+  }
+
+  .section .image > img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  .hero .title {
+    font-size: 2.5rem;
+  }
+
+  .hero .title::after {
+    width: 16rem;
+    border-width: 2px;
+  }
+
+  .hero .subtitle {
+    font-size: 1.5rem;
+  }
+}
