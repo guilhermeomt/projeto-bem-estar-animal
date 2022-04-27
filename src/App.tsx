@@ -1,7 +1,23 @@
+import {
+  Header,
+  Intro,
+  AboutUs,
+  Productions,
+  WhoWeAre,
+  Partners,
+  Footer,
+} from "@/components";
+
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <Header />
+      <Intro />
+      <AboutUs />
+      <Productions />
+      <WhoWeAre />
+      <Partners />
+      <Footer />
     </>
   );
 }

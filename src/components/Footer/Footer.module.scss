@@ -1,0 +1,31 @@
+.footer {
+  background-color: #a6a6a7 !important;
+  padding: 3rem 1rem 2rem !important;
+}
+
+.container {
+  display: flex !important;
+  gap: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #f3f3f4;
+  padding: 30px;
+  background-color: #79939f;
+  border-radius: 50%;
+}
+
+.icon {
+  color: #f3f3f4;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover .icon, 
+.link:focus .icon {
+  color: #e3dddd;
+}

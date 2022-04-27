@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f1f5fb;
+} 
+
+.section__title::after {
+  content: "";
+  margin: 0 auto;
+  display: block;
+  margin-top: 5px;
+  width: 6rem;
+  background: #0EFFA3;
+  border: 2px solid #0EFFA3;
+  border-radius: 3px;
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+
+@import "../node_modules/bulma/bulma.sass";
+
+@import "../node_modules/bulma-carousel/src/sass/index.sass"
