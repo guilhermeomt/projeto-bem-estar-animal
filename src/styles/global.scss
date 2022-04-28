@@ -4,6 +4,7 @@ html {
 
 body {
   background: #f1f5fb;
+  overflow: hidden;
 } 
 
 .section__title::after {
@@ -36,6 +37,14 @@ body {
 @import "../node_modules/bulma-carousel/src/sass/index.sass";
 
 @media (max-width: 768px) {
+  .carousel {
+    overflow: hidden;
+  }
+
+  .navbar {
+    padding: 1rem !important;
+  }
+
   .column.is-5 {
     display: none !important;
   }

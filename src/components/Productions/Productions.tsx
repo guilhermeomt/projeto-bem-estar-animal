@@ -14,9 +14,15 @@ import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
 export const Productions = () => {
   useEffect(() => {
-    bulmaCarousel.attach("#video-slider", {
+    const options = {
       slidesToShow: 3,
-    });
+      breakpoints: [
+        { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
+        { changePoint: 640, slidesToShow: 2, slidesToScroll: 2 },
+        { changePoint: 768, slidesToShow: 3, slidesToScroll: 3 },
+      ],
+    };
+    bulmaCarousel.attach("#video-slider", options);
   }, []);
 
   return (
