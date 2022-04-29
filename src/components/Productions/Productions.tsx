@@ -76,8 +76,8 @@ export const Productions = () => {
         <div
           style={{
             display: "flex",
-            justifyContent: "flex-end",
-            margin: "50px 75px",
+            justifyContent: "center",
+            margin: "50px 0",
           }}
         >
           <Button
