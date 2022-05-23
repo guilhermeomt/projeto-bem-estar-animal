@@ -1,3 +1,8 @@
 .subtitle {
   color: #9a9a9a !important;
-} 
+}
+
+.photo img {
+  object-position: 50% 20%;
+  object-fit: cover;
+}
