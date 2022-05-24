@@ -1,5 +1,5 @@
 import { Container, Heading, Hero } from "react-bulma-components";
-import Styles from "./Intro.module.scss";
+import * as Styles from "./Intro.module.scss";
 
 export const Intro = () => {
   return (

@@ -5,7 +5,7 @@ import {
   Section,
   Image,
 } from "react-bulma-components";
-import Styles from "./AboutUs.module.scss";
+import * as Styles from "./AboutUs.module.scss";
 
 export const AboutUs = () => {
   return (

@@ -1,1 +1,4 @@
-declare module "bulma-carousel/dist/js/bulma-carousel.min.js";
+declare module "*.scss" {
+  const content: { [className: string]: string };
+  export = content;
+}

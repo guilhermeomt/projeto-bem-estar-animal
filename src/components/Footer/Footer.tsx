@@ -5,7 +5,7 @@ import {
   Columns,
   Image,
 } from "react-bulma-components";
-import Styles from "./Footer.module.scss";
+import * as Styles from "./Footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -25,7 +25,7 @@ export const Footer = () => {
             <Container>
               <Columns centered>
                 <Columns.Column offset={2} size={2}>
-                  <Image src="assets/uenf-transparente.png" />
+                  <Image src="images/uenf-transparente.png" />
                 </Columns.Column>
                 <Columns.Column size={4} style={{ color: "#f3f3f4" }}>
                   <FontAwesomeIcon icon={faLocationPin} />

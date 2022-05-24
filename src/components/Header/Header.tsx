@@ -1,5 +1,5 @@
 import { Navbar, Image } from "react-bulma-components";
-import Styles from "./Header.module.scss";
+import * as Styles from "./Header.module.scss";
 
 export const Header = () => {
   function handleToggleMenu() {
@@ -27,7 +27,7 @@ export const Header = () => {
             <a href="/">
               <Image
                 size={128}
-                src="/assets/logo.png"
+                src="/images/logo.png"
                 alt="Projeto Bem Estar Animal"
               />
             </a>

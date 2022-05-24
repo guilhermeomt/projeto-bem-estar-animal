@@ -1,19 +1,13 @@
 import { useEffect } from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Heading,
-  Section,
-} from "react-bulma-components";
-import bulmaCarousel from "bulma-carousel/dist/js/bulma-carousel.min.js";
-import "bulma-carousel/src/sass/index.sass";
+import { Button, Container, Heading, Section } from "react-bulma-components";
 import { VideoCard } from "..";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
 export const Productions = () => {
   useEffect(() => {
+    const bulmaCarousel = require("bulma-carousel");
+
     const options = {
       slidesToShow: 3,
       breakpoints: [

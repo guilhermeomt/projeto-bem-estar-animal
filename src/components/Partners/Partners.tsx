@@ -22,17 +22,17 @@ export const Partners = () => {
       <Columns mt={5} centered vCentered>
         <Columns.Column size={2}>
           <a href="https://uenf.br" target="_blank" rel="noopener">
-            <Image src="/assets/uenf.png" />
+            <Image src="/images/uenf.png" />
           </a>
         </Columns.Column>
         <Columns.Column offset={1} size={1}>
           <a href="https://uenf.br/extensao/" target="_blank" rel="noopener">
-            <Image src="/assets/proex.png" />
+            <Image src="/images/proex.png" />
           </a>
         </Columns.Column>
         <Columns.Column offset={1} size={1}>
           <a href="https://cczcampos.com.br/" target="_blank" rel="noopener">
-            <Image src="/assets/ccz.png" />
+            <Image src="/images/ccz.png" />
           </a>
         </Columns.Column>
         <Columns.Column offset={1} size={1}>
@@ -41,7 +41,7 @@ export const Partners = () => {
             target="_blank"
             rel="noopener"
           >
-            <Image src="/assets/pmerj.png" />
+            <Image src="/images/pmerj.png" />
           </a>
         </Columns.Column>
       </Columns>

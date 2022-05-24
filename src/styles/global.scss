@@ -5,7 +5,7 @@ html {
 body {
   background: #f1f5fb;
   overflow: hidden;
-} 
+}
 
 .section__title::after {
   content: "";
@@ -13,8 +13,8 @@ body {
   display: block;
   margin-top: 5px;
   width: 6rem;
-  background: #0EFFA3;
-  border: 2px solid #0EFFA3;
+  background: #0effa3;
+  border: 2px solid #0effa3;
   border-radius: 3px;
 }
 
@@ -32,9 +32,8 @@ body {
   padding-bottom: 0 !important;
 }
 
-@import "../node_modules/bulma/bulma.sass";
-
-@import "../node_modules/bulma-carousel/src/sass/index.sass";
+@import "~bulma/bulma.sass";
+@import "~bulma-carousel/src/sass/index.sass";
 
 @media (max-width: 768px) {
   .carousel {

@@ -1,5 +1,5 @@
 import { Columns, Heading, Image } from "react-bulma-components";
-import Styles from "./MemberProfile.module.scss";
+import * as Styles from "./MemberProfile.module.scss";
 
 type MemberProfileProps = {
   name: string;
