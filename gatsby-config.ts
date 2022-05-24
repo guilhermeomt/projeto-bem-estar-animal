@@ -1,4 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -20,6 +23,15 @@ const config: GatsbyConfig = {
         isTSX: true,
         jsxPragma: `React`,
         allExtensions: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [process.env.GA_TRACKING_ID],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     "gatsby-plugin-react-helmet",
