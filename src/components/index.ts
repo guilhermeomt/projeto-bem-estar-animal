@@ -7,3 +7,4 @@ export * from "./Productions";
 export * from "./WhoWeAre";
 export * from "./Partners";
 export * from "./Footer";
+export * from "./Layout";

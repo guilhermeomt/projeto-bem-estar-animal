@@ -2,8 +2,13 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `projeto-bem-estar-animal`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title:
+      "Projeto Educação Humanitária e Bem Estar Animal - Educar para proteger",
+    titleTemplate: "%s · Projeto Educação Humanitária e Bem Estar Animal",
+    description:
+      "A educação humanitária estimula atitudes positivas em relação aos animais despertando a compaixão e respeito também pelas pessoas e meio-ambiente. Trabalhar com os temas sobre bem-estar animal e guarda responsável podem promover à comunidade transformações de comportamentos sociais.",
+    url: "https://bemestaranimal.uenf.br/",
+    image: "images/logo250px.png",
   },
   plugins: [
     "gatsby-plugin-image",
