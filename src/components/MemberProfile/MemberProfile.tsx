@@ -28,19 +28,21 @@ export const MemberProfile = ({
         />
       </Columns.Column>
       <Columns.Column size={9} mt={4} data-aos="zoom-in">
-        <Heading size={4}>
+        <Heading className={Styles.title} size={4}>
           <strong>{name}</strong>
         </Heading>
         <Heading className={Styles.subtitle} subtitle size={6}>
           {subtitle}
         </Heading>
-        {description && <p>{description}</p>}
+        <div className={Styles.description}>
+          {description && <p>{description}</p>}
 
-        {lattesUrl && (
-          <a href={lattesUrl} target="_blank" rel="noopener">
-            <p>Clique aqui para ver o currículo Lattes</p>
-          </a>
-        )}
+          {lattesUrl && (
+            <a href={lattesUrl} target="_blank" rel="noopener">
+              <p>Clique aqui para ver o currículo Lattes</p>
+            </a>
+          )}
+        </div>
       </Columns.Column>
     </>
   );

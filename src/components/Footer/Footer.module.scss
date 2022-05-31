@@ -3,9 +3,56 @@
   padding: 3rem 1rem 2rem !important;
 }
 
+.image {
+  figure {
+    img {
+      margin: 0 auto;
+      max-width: 350px;
+    }
+  }
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    margin-bottom: 0.2rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  h2 {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+}
+
 .container {
   display: flex !important;
-  gap: 15px;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  @media (max-width: 768px) {
+    p {
+      text-align: center;
+    }
+  }
 }
 
 .link {
@@ -25,7 +72,7 @@
   transition: color 0.3s ease-in-out;
 }
 
-.link:hover .icon, 
+.link:hover .icon,
 .link:focus .icon {
   color: #e3dddd;
 }

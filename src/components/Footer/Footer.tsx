@@ -7,14 +7,17 @@ import {
 } from "react-bulma-components";
 import * as Styles from "./Footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import {
-  fa500px,
-  faInstagram,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+  faLocationPin,
+  faChartSimple,
+} from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-export const Footer = () => {
+type FooterProps = {
+  totalCount: number;
+};
+
+export const Footer = ({ totalCount }: FooterProps) => {
   return (
     <div>
       <Hero>
@@ -24,15 +27,24 @@ export const Footer = () => {
           <BulmaFooter className={Styles.footer}>
             <Container>
               <Columns centered>
-                <Columns.Column offset={2} size={2}>
+                <Columns.Column className={Styles.image} offset={1} size={2}>
                   <Image src="images/uenf-transparente.png" />
                 </Columns.Column>
-                <Columns.Column size={4} style={{ color: "#f3f3f4" }}>
-                  <FontAwesomeIcon icon={faLocationPin} />
-                  <p>
-                    Av. Alberto Lamego, 2000 - Parque Califórnia Campos dos
-                    Goytacazes - RJ. CEP: 28013-602
-                  </p>
+                <Columns.Column size={2} style={{ color: "#f3f3f4" }}>
+                  <div className={Styles.counter}>
+                    <FontAwesomeIcon icon={faChartSimple} size={"lg"} />
+                    <h3>Contador de visitas: </h3>
+                    <h2>{totalCount}</h2>
+                  </div>
+                </Columns.Column>
+                <Columns.Column size={3} style={{ color: "#f3f3f4" }}>
+                  <div className={Styles.location}>
+                    <FontAwesomeIcon icon={faLocationPin} size={"lg"} />
+                    <p>
+                      Av. Alberto Lamego, 2000 - Parque Califórnia Campos dos
+                      Goytacazes - RJ. CEP: 28013-602
+                    </p>
+                  </div>
                 </Columns.Column>
                 <Columns.Column className={Styles.container} size={3}>
                   <a

@@ -13,7 +13,7 @@ export const WhoWeAre = () => {
         >
           Quem Somos
         </Heading>
-        <Columns>
+        <Columns alignItems="center">
           <MemberProfile
             name="Prof. Dra. Rosemary Bastos"
             subtitle="Coordenadora do projeto Educação Humanitária e Bem Estar Animal"

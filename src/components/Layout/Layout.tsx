@@ -3,16 +3,17 @@ import { Header } from "../Header";
 import { SEO } from "../SEO";
 
 type LayoutProps = {
+  totalCount: number;
   children: React.ReactNode | React.ReactNode[];
 };
 
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ totalCount, children }: LayoutProps) => {
   return (
     <>
       <SEO />
       <Header />
       <main>{children}</main>
-      <Footer />
+      <Footer totalCount={totalCount} />
     </>
   );
 };

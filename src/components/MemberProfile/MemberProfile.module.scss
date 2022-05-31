@@ -1,8 +1,24 @@
+.title {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
 .subtitle {
   color: #9a9a9a !important;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .photo img {
   object-position: 50% 20%;
   object-fit: cover;
+}
+
+.description {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
